@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="./static/css/main.css">
-<link rel="icon" type="image/x-icon" href="./static/img/favicon.png">
+        <link rel="icon" type="image/x-icon" href="./static/img/favicon.png">
 
     </head>
     <body class="">
@@ -60,24 +60,53 @@
                     <a class="jumbotron__content__btn ui-button">LEARN MORE</a>
                 </div>
             </div>
+            <!-- TRENDING -->
+
             <!-- HAPPENING -->
-            <div class="container">
-                <div class="card-large" style="background-image: url('../src/img/card1-large.jpg');">
-                    <h3 class="card-large__category">CITY</h3>
-                    <div class="card-large__content">
-                        <h2 class="card-large__content__title">Large article title mobile layout</h2>
-                        <p class="card-large__content__desc">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit</p>
-                        <div class="card-large__content__time"><img src="../src/img/patch.png"><p >2 days ago</p></div>
+            <div class="wrapper">
+                <h2 class="header">HAPPENING NOW</h2>
+                <section class="happening">
+                    <!-- large -->
+                    <div class="large-container">
+                        <div class="card-large" style="background-image: url('../src/img/card1-large.jpg');">
+                            <h3 class="card-large__category">CITY</h3>
+                            <div class="card-large__content">
+                                <h2 class="card-large__content__title">Large article title mobile layout</h2>
+                                <p class="card-large__content__desc">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit</p>
+                                <div class="card-large__content__time"><img src="../src/img/clock.svg"><p >2 days ago</p></div>
+                            </div>
+                        </div>
+
+                        <div class="card-large" style="background-image: url('../src/img/card2-large.jpg');">
+                            <h3 class="card-large__category">TRAVEL</h3>
+                            <div class="card-large__content">
+                                <h2 class="card-large__content__title">Large article title mobile layout</h2>
+                                <p class="card-large__content__desc">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit</p>
+                                <div class="card-large__content__time"><img src="../src/img/clock.svg"><p >2 days ago</p></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card-large" style="background-image: url('../src/img/card2-large.jpg');">
-                    <h3 class="card-large__category">TRAVEL</h3>
-                    <div class="card-large__content">
-                        <h2 class="card-large__content__title">Large article title mobile layout</h2>
-                        <p class="card-large__content__desc">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit</p>
-                        <div class="card-large__content__time"><img src="../src/img/patch.png"><p >2 days ago</p></div>
+                    <!-- small -->
+                    <div class="small-container">
+                        <div class="card-small">
+                            <img src="src/img/card1-small.jpg">
+                                <h2 class="card-small__title">Small tittle</h2>
+                                <div class="card-small__time"><img src="../src/img/clock.svg"><p >3h ago by Worldnews </p></div>
+                        </div>
+
+                        <div class="card-small">
+                            <img src="src/img/card2-small.jpg">
+                                <h2 class="card-small__title">Small tittle</h2>
+                                <div class="card-small__time"><img src="../src/img/clock.svg"><p >3h ago by Worldnews</p></div>
+                        </div>
+
+                        <div class="card-small card-small--modifier">
+                            <img src="src/img/card3-small.jpg">
+                                <h2 class="card-small__title">Small tittle</h2>
+                                <div class="card-small__time"><img src="../src/img/clock.svg"><p>3h ago by Worldnews</p></div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
         </main>
         
@@ -91,7 +120,8 @@
     </div>
 </footer> -->
 
-        
         <script src="./static/js/app.js"></script>
+
+        
     </body>
 </html>
