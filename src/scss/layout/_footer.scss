@@ -1,5 +1,59 @@
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-.l-footer {
+footer {
+    display: none;
+        @media (min-width: 767px) {
+        padding-top: 50px;
+        color: #fff;
+        height: 316px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1.2fr;
+        max-width: 608px;
+        margin: 0 auto;
+        }
+        @media (min-width: 1024px) {
+            height: 200px;
+            grid-template-columns: 1fr 4fr 4fr 3fr;
+            grid-template-rows: 1fr;
+            max-width: 960px;
+            }
+    }   
+
+.logo {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    font-size: 13px;
+    justify-content: start;
+}
+
+.input {
+    justify-self: start;
+    align-self: end;
+    margin-bottom: -12px;
+    font-size: 11px;
+    @media (min-width: 1024px) {
+        justify-self: start;
+        align-self: start;
+        }
+    input {
+        height: 40px;
+        width: 284px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }    
+}
+
+.socials {
+    justify-self: end;
+    align-self: end;
+    @media (min-width: 1024px) {
+        justify-self: start;
+        align-self: start;
+        }
 }

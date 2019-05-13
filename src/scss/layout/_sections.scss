@@ -16,6 +16,7 @@
     @media (min-width: 1024px) {
         height: 600px;
         width: 830px;
+    
     }
     &__content {
         text-align: left;
@@ -77,7 +78,6 @@
 
 .happening {
     display: grid;
-    
 }
 
 .card-large {
@@ -153,6 +153,10 @@
 
 .wrapper {
     background-color: #f6f8f9;
+    padding-bottom: 40px;
+    &--modifier {
+        background-color: #a6adb4;
+    }
 }
 
 .happening {
@@ -160,7 +164,6 @@
     display: grid;
     grid-template-columns: 100%;
     grid-row-gap: 20px;
-    widows: 325px;
     @media (min-width: 767px) {
         max-width: 608px;
     }
@@ -239,7 +242,7 @@
 
 .small-container {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-row-gap: 25px;
     @media (min-width: 767px) {
         max-width: 608px;
@@ -251,13 +254,38 @@
     }
 }
 
-.swiper-container {
-    width: 600px;
-    height: 300px;
+.trending {
+    background-color: #f6f8f9;
+    padding-top: 50px;
 }
 
-.swiper-slide {
-    background-color: red;
+.swiper-container {
+    width: 960px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    text-align: left;
+  }
+
+.swiper-button-next, .swiper-button-prev {
+    position: relative;
 }
-  
+
+.bar {
+    margin: 0 auto;
+    width: 960px;
+    display: grid;
+    grid-template-columns: 200px 50px 50px;
+    grid-column-gap: 200px;
+    justify-items: start;
+}
 
