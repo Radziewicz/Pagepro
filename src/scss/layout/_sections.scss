@@ -9,15 +9,15 @@
     background-size: cover;
     position: relative;
     height: 388px;
-    @media (min-width: 767px) {
+        @media (min-width: 767px) {
         height: 400px;
         width: 100%;
     }
-    @media (min-width: 1024px) {
-        height: 600px;
-        width: 830px;
-    
-    }
+        @media (min-width: 1024px) {
+            height: 600px;
+            width: 830px;
+        
+        }
     &__content {
         text-align: left;
         position: absolute;
@@ -154,9 +154,11 @@
 .wrapper {
     background-color: #f6f8f9;
     padding-bottom: 40px;
-    &--modifier {
-        background-color: #a6adb4;
-    }
+}
+
+.footer-wrapper {
+    padding-bottom: 40px;
+    background-color: #a6adb4;
 }
 
 .happening {
@@ -281,11 +283,110 @@
 }
 
 .bar {
-    margin: 0 auto;
-    width: 960px;
     display: grid;
-    grid-template-columns: 200px 50px 50px;
-    grid-column-gap: 200px;
+    grid-template-columns: 3fr 1fr;
     justify-items: start;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    h2 {
+        margin: 0;
+    }
+    & > div {
+        justify-self: end;
+    }
 }
+
+.hero {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 100px;
+}
+
+
+.news-swiper {
+    overflow: hidden;
+    &__bar {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        justify-items: start;
+        align-items: center;
+        border-bottom: 1px solid #cbd0d3;
+        margin-top: 30px;
+        width: 100%;
+        h2 {
+            margin: 0;
+        }
+        & > div {
+            justify-content: end;
+        }
+    }
+    &__card {
+        height: 200px;
+        &:nth-child(odd) {
+            padding-top: 40px;
+        }
+        &__title {
+            font-size: 16px;
+            color: red;
+            margin: 0;
+            padding-bottom: 15px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            margin: 0;
+            padding-bottom: 5px;
+        }
+        &__desc {
+            margin: 0;
+            font-size: 16px;
+            font-weight: light;
+            line-height: 1.5;
+            padding-bottom: 5px;
+            color: #a6adb4;
+        }
+        &__time {
+            font-size: 13px;
+            color: #cbd0d3;
+            display: flex;
+            align-items: center;
+            p {
+                margin: 0;
+            }
+            img {
+                width: 16px;
+                height: 16px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+.arrow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.hero {
+    max-width: 1150px;
+}
+
+.hero > .jumbotron {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.hero > .jumbotron .news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
