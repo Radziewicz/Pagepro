@@ -4,10 +4,11 @@
     width: 100%;
     height: 240px;
     @media (min-width: 767px) {
-        width: 284px;
+        width: 285px;
     }
     @media (min-width: 1024px) {
         height: 285px;
+        width: 300px;
     }
     &__title {
         font-size: 16px;
@@ -18,8 +19,12 @@
         size: cover;
         position: center;
         max-width: 300px;
+        @media (min-width: 767px) {
+            width: 285px;
+        }
         @media (min-width: 1024px) {
             height: 210px;
+            width: 300px;
         }
     }
         &__time {

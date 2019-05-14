@@ -149,8 +149,13 @@
 
 
 // 
+// TRENDING
 // 
-// 
+
+.trending {
+    background-color: #f6f8f9;
+}
+
 
 .header {
     max-width: 300px;
@@ -165,103 +170,20 @@
 }
 
 
-.card-slider {
-    align-content: center;
-    @media (min-width: 767px) {
-        width: 284px;
-    }
-    @media (min-width: 1024px) {
-        height: 250px;
-        padding: 10% 0 10% 10%;
-    }
-    &__title {
-        font-size: 16px;
-    }
-    &__desc {
-        font-size: 13px;
-        line-height: 2;
-        color: #A6ADB4;
-        margin-bottom: 0;
-    }
-    img {
-        size: cover;
-        position: center;
-        max-width: 325px;
-        @media (min-width: 767px) {
-            width: 284px;
-        }
-        @media (min-width: 1024px) {
-            height: 210px;
-        }
-    }
-        &__time {
-            margin-top: 5px;
-            font-size: 13px;
-            color: #bac0c4;
-            align-items: center;
-            display: grid;
-            grid-template-columns: 20px auto;
-            img {
-                width: 16px;
-                height: 16px;
-                padding-right: 5px;
-            }
-        }
-    &--modifier {
-        @media (min-width: 767px) {
-            display: none;
-        }
-        @media (min-width: 1024px) {
-            display: grid;
-        }
-    }
-}
-
-
-
-
-
-
-.trending {
-    background-color: #f6f8f9;
-    padding-top: 50px;
-}
-
-.swiper-container {
-    width: 360px;
-    height: 900px;
-    margin: 0 auto;
-    @media (min-width: 767px) {
-        width: 700px;
-        height: 500px;
-    }
-    @media (min-width: 1024px) {
-        width: 960px;
-    }
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 350px;
-    text-align: left;
-  }
-
-.swiper-button-next, .swiper-button-prev {
-    position: relative;
-}
 
 .bar {
     display: grid;
     grid-template-columns: 3fr 1fr;
     justify-items: start;
     align-items: center;
-    max-width: 960px;
+    max-width: 300px;
     margin: 0 auto;
+    @media (min-width: 767px) {
+        max-width: 608px;
+    }
+    @media (min-width: 1024px) {
+        max-width: 960px;
+    }
     h2 {
         margin: 0;
     }
