@@ -75,11 +75,14 @@
     background: #fff;
     display: flex;
     flex-direction: column;
-    height: 360px;
     width: 280px;
     text-align: left;
   }
 
 .swiper-button-next, .swiper-button-prev {
     position: relative;
+}
+
+.carousel-card {
+    height: 360px;
 }
