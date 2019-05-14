@@ -12,7 +12,7 @@ footer {
         }
         @media (min-width: 1024px) {
             height: 200px;
-            grid-template-columns: 1fr 4fr 4fr 3fr;
+            grid-template-columns: 1fr 2fr 3fr 1fr;
             grid-template-rows: 1fr;
             max-width: 960px;
             }
@@ -24,11 +24,13 @@ footer {
 }
 
 .links {
+    color: #cbd0d3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
     font-size: 13px;
     justify-content: start;
+    grid-template-rows: repeat(4, 25px);
 }
 
 .input {
@@ -36,24 +38,34 @@ footer {
     align-self: end;
     margin-bottom: -12px;
     font-size: 11px;
+    color: #cbd0d3;
     @media (min-width: 1024px) {
-        justify-self: start;
+        justify-self: center;
         align-self: start;
         }
     input {
         height: 40px;
         width: 284px;
         background-color: transparent;
-        border: 1px solid #fff;
+        border: 1px solid #cbd0d3;
         border-radius: 5px;
     }    
+}
+
+::placeholder {
+    color: #CBD0D3;
+    opacity: 1;
+    padding-left: 10px;
 }
 
 .socials {
     justify-self: end;
     align-self: end;
     @media (min-width: 1024px) {
-        justify-self: start;
+        justify-self: end;
         align-self: start;
+        }
+        svg {
+            margin-left: 15px;
         }
 }

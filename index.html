@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="./static/css/main.css">
         <link rel="icon" type="image/x-icon" href="./static/img/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     </head>
     <body class="">
@@ -113,8 +114,8 @@
                      </div>
                 </div>
           </section>
-            <!-- TRENDING -->
-            <section class="trending">
+             <!-- TRENDING -->
+             <section class="trending">
                 <div class="bar">
                     <h2 class="header start">TRENDING</h2>
                     <div class="arrow">
@@ -183,7 +184,6 @@
                                 </div>  
                             </div>
                          </div>
-                        </div>
                         <div class="swiper-slide carousel-card">                       
                             <img src="src/img/carousel3.jpg">
                             <div class="card-slider">
@@ -245,7 +245,6 @@
                 </section>
             </div>
         </main>
-        
             
         <!-- FOOTER -->
         <div class="footer-wrapper">
@@ -268,7 +267,7 @@
                     <a href="" class="links__item">Careers</a>
                 </div>
                 <div class="input">
-                    <input>
+                    <input placeholder="Email &#xf124;">
                     <p>Stay in touch with us for the freshest products!</p>             
                 </div>
                 <div class="socials">
@@ -305,7 +304,38 @@
 
         <script>
             var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 3,
+              slidesPerView: 3,
+              slidesPerColumn: 1,
+              spaceBetween: 30,
+              // init: false,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+              breakpoints: {
+                1024: {
+                  slidesPerView: 2,
+                  slidesPerColumn: 1,
+                  spaceBetween: 30,
+                },
+                767: {
+                  slidesPerView: 1,
+                  slidesPerColumn: 2,
+                  spaceBetween: 20,
+                },
+              }
+            });
+          </script>
+
+
+        <script>
+                var swiperdwa = new Swiper('.news-swiper', {
+                slidesPerView: 1,
+                slidesPerColumn: 2,
                 spaceBetween: 30,
                 pagination: {
                     el: '.swiper-pagination',
@@ -315,23 +345,20 @@
                 nextEl: '.next',
                 prevEl: '.prev',
             },
+            breakpoints: {
+                1024: {
+                  slidesPerView: 2,
+                  slidesPerColumn: 1,
+                  spaceBetween: 30,
+                },
+                767: {
+                  slidesPerView: 1,
+                  slidesPerColumn: 2,
+                  spaceBetween: 20,
+                },
+              }
                 });
         </script>
-        <script>
-                var swiperdwa = new Swiper('.news-swiper', {
-                    slidesPerView: 1,
-                    slidesPerColumn: 2,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                    nextEl: '.next',
-                    prevEl: '.prev',
-                },
-                    });
-            </script>
         
     </body>
 </html>

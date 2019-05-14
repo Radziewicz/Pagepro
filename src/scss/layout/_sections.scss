@@ -1,3 +1,5 @@
+
+    
 /* ==========================================================================
    Sections
    ========================================================================== */
@@ -356,8 +358,11 @@
 
 .hero {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 100%;
     grid-column-gap: 100px;
+    @media (min-width: 1024px) {
+        grid-template-columns: 70% 30%;
+    }
 }
 
 
@@ -445,5 +450,4 @@
     justify-content: center;
     align-items: center;
 }
-
 
