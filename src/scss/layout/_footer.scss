@@ -1,37 +1,57 @@
 footer {
-    display: none;
+    display: grid;
+    max-width: 300px;
+    margin: 0 auto;
         @media (min-width: 767px) {
         padding-top: 50px;
         color: #fff;
-        height: 316px;
-        display: grid;
+        height: 270px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1.2fr;
+        grid-column-gap: 40px;
         max-width: 608px;
         margin: 0 auto;
         }
         @media (min-width: 1024px) {
             height: 200px;
-            grid-template-columns: 1fr 2fr 3fr 1fr;
+            grid-template-columns: 0.5fr 2.2fr 3fr 1.5fr;
             grid-template-rows: 1fr;
             max-width: 960px;
+            grid-column-gap: 20px;
             }
     }   
 
 .logo {
     font-weight: bold;
     font-size: 13px;
+    display: none;
+    @media (min-width: 767px) {
+        display: block;
+        }
 }
 
 .links {
     color: #cbd0d3;
+    text-transform: uppercase;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: start;
-    font-size: 13px;
+    grid-template-columns: repeat(2, 120px);
     justify-content: start;
-    grid-template-rows: repeat(4, 25px);
-}
+    align-items: center;
+    font-size: 11px;
+    justify-items: left;
+    grid-template-rows: repeat(6, 30px);
+    padding-top: 50px;
+    @media (min-width: 767px) {
+        text-transform: none;
+        font-size: 13px;
+        padding-top: 0;
+        align-items: start;
+        justify-content: start;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 25px);
+        }
+    }
+
 
 .input {
     justify-self: start;
@@ -39,16 +59,24 @@ footer {
     margin-bottom: -12px;
     font-size: 11px;
     color: #cbd0d3;
+    display: none;
+    @media (min-width: 767px) {
+        display: block;
+        padding-bottom: 10px;
+        }
     @media (min-width: 1024px) {
-        justify-self: center;
+        justify-self: end;
         align-self: start;
         }
     input {
         height: 40px;
-        width: 284px;
+        width: 250px;
         background-color: transparent;
         border: 1px solid #cbd0d3;
         border-radius: 5px;
+        @media (min-width: 1024px) {
+            margin-right: 40px;
+            }
     }    
 }
 
@@ -59,13 +87,18 @@ footer {
 }
 
 .socials {
-    justify-self: end;
-    align-self: end;
-    @media (min-width: 1024px) {
+    justify-self: start;
+    align-self: start;
+    padding-top: 50px;
+    @media (min-width: 767px) {
+        padding-top: 0;
         justify-self: end;
+        align-self: end;
+        }
+    @media (min-width: 767px) {
         align-self: start;
         }
         svg {
-            margin-left: 15px;
+            margin-right: 20px;
         }
 }

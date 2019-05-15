@@ -54,7 +54,8 @@
             max-width: 300px;
         }
         @media (min-width: 1024px) {
-            width: 270px;
+            max-width: 350px;
+            height: 150px;
         }
         &:nth-child(odd) {
             padding-top: 40px;
