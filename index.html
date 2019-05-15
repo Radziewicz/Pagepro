@@ -7,8 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <link rel="stylesheet" href="./static/css/main.css">
-        <link rel="icon" type="image/x-icon" href="./static/img/favicon.png">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="./static/img/favicon.png"> 
 
     </head>
     <body class="">
@@ -81,30 +80,53 @@
                 <!-- mobile menu -->
                 <input type="checkbox" id="menu-open">
 									<nav class="menu-list">
-										<a href="#top" class="menu-list__item">Home</a>
-                                        <a href="#about" class="menu-list__item dropdown-trigger">Discovery</a>
-                                        <ul class="dropdown-menu">
-                                            <li class="dropdown-menu-item">
-                                            <a href="#">World News</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                            <a href="#">Travel</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                            <a href="#">Technology</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                            <a href="#">City</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                            <a href="#">Culture</a>
-                                            </li>
-                                            <li class="dropdown-menu-item">
-                                            <a href="#">More...</a>
-                                            </li>
-                                        </ul>
-										<a href="#service" class="menu-list__item">Photos</a>
-										<a href="#contact" class="menu-list__item">Contact</a>
+                                        <span class="menu-list__item menu-list__item--modifier">LOGO</span>
+                                        <div>
+                                            
+                                            <a href="" class="menu-list__item active"><i class="fas fa-home"></i><span>Home</span></a>
+                                            <a href="" class="menu-list__item dropdown-trigger"><i class="fas fa-compass"></i><span>Discovery</span></a>
+                                            <!-- <ul class="dropdown-menu">
+                                                <li class="dropdown-menu-item">
+                                                <a href="#">World News</a>
+                                                </li>
+                                                <li class="dropdown-menu-item">
+                                                <a href="#">Travel</a>
+                                                </li>
+                                                <li class="dropdown-menu-item">
+                                                <a href="#">Technology</a>
+                                                </li>
+                                                <li class="dropdown-menu-item">
+                                                <a href="#">City</a>
+                                                </li>
+                                                <li class="dropdown-menu-item">
+                                                <a href="#">Culture</a>
+                                                </li>
+                                                <li class="dropdown-menu-item">
+                                                <a href="#">More...</a>
+                                                </li> 
+                                            </ul> -->
+                                            <a href="" class="menu-list__item"><i class="far fa-image"></i><span>Photos</span></a>
+                                            <a href="" class="menu-list__item"><i class="fas fa-envelope-open"></i><span>Contact</span></a>
+                                            <a href="" class="menu-list__item"><img src="../src/img/portrait.png"><span>Profile</span></a>
+                                        </div>
+                                        <div class="menu-footer"> 
+                                            <div class="menu-footer__links">
+                                                <a href="" class="links__item">About</a>
+                                                <a href="" class="links__item">Help</a>
+                                                <a href="" class="links__item">Terms</a>
+                                                <a href="" class="links__item">Guidlines</a>
+                                                <a href="" class="links__item">Testimonials</a>
+                                                <a href="" class="links__item">Advertise</a>
+                                                <a href="" class="links__item">Integrations</a>
+                                                <a href="" class="links__item">Careers</a>
+                                            </div>
+                                            <div class="menu-footer__social-icons">
+                                                <i class="fab fa-instagram"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fas fa-globe-americas"></i>      
+                                            </div>                               
+                                        </div>
 									</nav>
 									<label for="menu-open" class="nav-btn">
 									 <span class="nav-btn__item"></span>
@@ -345,7 +367,7 @@
                     <a href="" class="links__item">Careers</a>
                 </div>
                 <div class="input">
-                    <input placeholder="Email &#xf124;">
+                    <input placeholder="Email">
                     <p>Stay in touch with us for the freshest products!</p>             
                 </div>
                 <div class="socials">
@@ -378,7 +400,8 @@
 
         <script src="./static/js/app.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>     
+        <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>   
 
         <script>
             var swiper = new Swiper('.swiper-container', {
