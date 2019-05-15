@@ -45,6 +45,7 @@
                 </nav>
             </div>
         </header> -->
+        <!-- main menu -->
         <nav class="nav">
               <div class="top-bar">
                 <div class="top-bar__logo">LOGO</div>
@@ -77,6 +78,39 @@
                   <a href="#products" class="top-bar__nav__link">Photos</a>
                   <a href="#contact" class="top-bar__nav__link">Contact</a>
                 </div>
+                <!-- mobile menu -->
+                <input type="checkbox" id="menu-open">
+									<nav class="menu-list">
+										<a href="#top" class="menu-list__item">Home</a>
+                                        <a href="#about" class="menu-list__item dropdown-trigger">Discovery</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-menu-item">
+                                            <a href="#">World News</a>
+                                            </li>
+                                            <li class="dropdown-menu-item">
+                                            <a href="#">Travel</a>
+                                            </li>
+                                            <li class="dropdown-menu-item">
+                                            <a href="#">Technology</a>
+                                            </li>
+                                            <li class="dropdown-menu-item">
+                                            <a href="#">City</a>
+                                            </li>
+                                            <li class="dropdown-menu-item">
+                                            <a href="#">Culture</a>
+                                            </li>
+                                            <li class="dropdown-menu-item">
+                                            <a href="#">More...</a>
+                                            </li>
+                                        </ul>
+										<a href="#service" class="menu-list__item">Photos</a>
+										<a href="#contact" class="menu-list__item">Contact</a>
+									</nav>
+									<label for="menu-open" class="nav-btn">
+									 <span class="nav-btn__item"></span>
+									 <span class="nav-btn__item"></span>
+									 <span class="nav-btn__item"></span>
+									</label>
                 <div class="top-bar__avatar">
                     <img src="../src/img/portrait.png">
                 </div>
