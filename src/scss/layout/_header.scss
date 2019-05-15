@@ -1,3 +1,8 @@
+
+.nav {
+  background-color: #f6f8f9;
+}
+
 .dropdown {
     overflow: hidden;
   }
@@ -21,12 +26,12 @@
   
 
   .top-bar {
-      width: 100%;
+      max-width: 1250px;
+      margin: 0 auto;
       height: 60px;
       display: grid;
       grid-template-columns: 10% auto 5%;
       align-items: center;
-      background-color: #f6f8f9;
       &__logo {
         padding-left: 20px;
         align-self: center;

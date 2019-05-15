@@ -5,76 +5,7 @@
    ========================================================================== */
     /* JUMBOTRON*/ 
 
-   .jumbotron {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 388px;
-        @media (min-width: 767px) {
-        height: 400px;
-        width: 100%;
-    }
-        @media (min-width: 1024px) {
-            height: 600px;
-            width: 830px;
-        
-        }
-    &__content {
-        text-align: left;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        color: white;
-        top: 50%;
-        left: 50%;
-        width: 320px;
-        @media (min-width: 767px) {
-            width: 600px;
-            top: 50%;
-            left: 55%;
-        }
-        @media (min-width: 1024px) {
-            left: 50%;
-        }
-        &__title {
-            font-size: 24px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #fff;
-            @media (min-width: 767px) {
-                width: 530px;
-                padding-bottom: 30px;
-            }
-        }
-        &__subtitle {
-            font-size: 24px;
-            margin-bottom: 10px;
-            @media (min-width: 767px) {
-                padding-top: 10px;
-                margin-bottom: 0;
-            }
-        }
-        &__desc {
-            margin-top: 0;
-            font-size: 16px;
-            font-weight: 100;
-            line-height: 26px;
-            width: 327px;
-            padding-bottom: 10px;
-            @media (min-width: 767px) {
-                width: 530px;
-                padding-bottom: 30px;
-            }
-        }
-        &__btn {
-            display: flex;
-            width: 134px;
-            height: 40px;
-            font-size: 11px;
-            justify-content: center;
-            align-items: center;
-        }
-      }
-  }
+
 
 
 
@@ -195,9 +126,11 @@
 .hero {
     display: grid;
     grid-template-columns: 100%;
-    grid-column-gap: 100px;
     @media (min-width: 1024px) {
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 60% 40%;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 60% 40%;
     }
 }
 
@@ -215,17 +148,20 @@
     }
 }
 
-.hero {
-    max-width: 1150px;
+.hero__content {
+    max-width: 1000px;
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    }
 }
 
-.hero > .jumbotron {
+.hero__content > .jumbotron {
     display: flex;
     width: 100%;
     position: relative;
 }
 
-.hero > .jumbotron .news {
+.hero__content > .jumbotron .news {
     display: flex;
     flex-direction: column;
     justify-content: center;
