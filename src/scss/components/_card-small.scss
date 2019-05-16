@@ -10,7 +10,10 @@
         height: 285px;
         width: 300px;
     }
-    &__title {
+    &__title {     
+        font-family: acumin-pro, sans-serif;
+        font-weight: 700;
+        font-style: normal;
         font-size: 16px;
         margin: 0;
         padding: 20px 0 10px 0;
