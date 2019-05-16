@@ -9,7 +9,7 @@
         padding: 10% 0 10% 10%;
     }
     &__title {
-        font-size: 16px;
+        font-size: var(--font-size-large);
         margin: 0;
         padding: 35px 0 10px 0;
         @media (min-width: 1024px) {
@@ -20,9 +20,9 @@
         font-family: acumin-pro,sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 13px;
+        font-size: var(--font-size-medium);
         line-height: 2;
-        color: #A6ADB4;
+        color: var(--color-text-alt);
         margin: 0;
     }
     img {
@@ -38,14 +38,14 @@
     }
         &__time {
             margin: 0;
-            font-size: 13px;
-            color: #bac0c4;
+            font-size: var(--font-size-medium);
+            color: var(--color-time);
             align-items: center;
             display: grid;
             grid-template-columns: 20px auto;
             img {
-                width: 16px;
-                height: 16px;
+                width: var(--font-size-large);
+                height: var(--font-size-large);
                 padding-right: 5px;
             }
         }
@@ -75,7 +75,7 @@
 
   .swiper-slide {
     text-align: center;
-    background: #fff;
+    background: var(--color-light);
     display: flex;
     flex-direction: column;
     width: 280px;

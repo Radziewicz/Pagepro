@@ -4,7 +4,7 @@ footer {
     margin: 0 auto;
         @media (min-width: 767px) {
         padding-top: 50px;
-        color: #fff;
+        color: var(--color-light);
         height: 270px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1.2fr;
@@ -25,7 +25,7 @@ footer {
     font-family: acumin-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 13px;
+    font-size: var(--font-size-medium);
     display: none;
     @media (min-width: 767px) {
         display: block;
@@ -33,19 +33,25 @@ footer {
 }
 
 .links {
-    color: #cbd0d3;
+    color: var(--color-text-main);
     text-transform: uppercase;
     display: grid;
     grid-template-columns: repeat(2, 120px);
     justify-content: start;
     align-items: center;
-    font-size: 11px;
+    font-size: var(--font-size-small);
     justify-items: left;
     grid-template-rows: repeat(6, 30px);
     padding-top: 50px;
+    &__item {
+      &:hover {
+        color: var(--color-light);
+        transition: 0.3s;
+      }
+    }
     @media (min-width: 767px) {
         text-transform: none;
-        font-size: 13px;
+        font-size: var(--font-size-medium);
         padding-top: 0;
         align-items: start;
         justify-content: start;
@@ -59,8 +65,8 @@ footer {
     justify-self: start;
     align-self: end;
     margin-bottom: -12px;
-    font-size: 11px;
-    color: #cbd0d3;
+    font-size: var(--font-size-small);
+    color: var(--color-text-main);
     display: none;
     @media (min-width: 767px) {
         display: block;
@@ -69,17 +75,7 @@ footer {
     @media (min-width: 1024px) {
         justify-self: end;
         align-self: start;
-        }
-    input {
-        height: 40px;
-        width: 250px;
-        background-color: transparent;
-        border: 1px solid #cbd0d3;
-        border-radius: 5px;
-        @media (min-width: 1024px) {
-            margin-right: 40px;
-            }
-    }    
+        }  
 }
 
 form {
@@ -91,32 +87,25 @@ form {
         height: 40px;
         width: 250px;
         background-color: transparent;
-        border: 1px solid #cbd0d3;
+        border: 1px solid var(--color-text-main);
         border-radius: 5px;   
+        color: var(--color-dark);
+        padding-left: 20px;
         &:focus {  
-            background-color: #fff;
-            border: 2px solid #72ACFF;
+            background-color: var(--color-light);
+            border: 2px solid var(--color-focus);
             outline: 0;        
-        }      
-        &:valid {
-          background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
-          background-size: 20px;
-          background-repeat: no-repeat;
-          background-position: 200px 10px;
-          & + label {
-            opacity: 0;
-          }
-        }      
+        }          
         &:invalid:not(:focus):not(:placeholder-shown) {
-          border-color: red;
+          color: var( --color-danger);
+          border-color: var( --color-danger);
           & + label {
             opacity: 0;
           }
         }    
         &:invalid:focus:not(:placeholder-shown) {
           & ~ .requirements {
-            max-height: 400px;
-            padding: 0 30px 20px 50px;
+            max-height: 100px;
           }
         }       
       }
@@ -126,16 +115,15 @@ form {
         max-height: 0;
         transition: 0.28s;
         overflow: hidden;
-        color: red;
+        color: var( --color-danger);
       }    
     }
     
   }
 
 ::placeholder {
-    color: #CBD0D3;
+    color: var(--color-text-main);
     opacity: 1;
-    padding-left: 10px;
 }
 
 .socials {
@@ -152,5 +140,9 @@ form {
         }
         svg {
             margin-right: 20px;
+            &:hover {
+              padding-bottom: 5px;
+              transition: 0.3s;
+            }
         }
 }
